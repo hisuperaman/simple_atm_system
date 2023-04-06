@@ -69,7 +69,7 @@ void deposit()
     printf("Enter the amount you want to deposit\n");
     scanf("%f", &amt);
     balance += amt;
-    printf("Rs %.2f deposited\n", amt);
+    printf("Rs %.2f is credited to your account\n", amt);
     printf("Your current account balance is: Rs %.2f\n", balance);
 }
 
@@ -81,7 +81,7 @@ void withdraw()
     if(amt<=balance)
     {
         balance -= amt;
-        printf("Rs %.2f withdrawed\n", amt);
+        printf("Rs %.2f is debited from your account\n", amt);
         printf("Your current balance is: Rs %.2f\n", balance);
     }
     else
